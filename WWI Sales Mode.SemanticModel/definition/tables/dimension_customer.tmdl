@@ -1,0 +1,115 @@
+table dimension_customer
+	lineageTag: 6c4da61a-aeae-4ca0-bb25-d6bd0782645f
+	sourceLineageTag: [dbo].[dimension_customer]
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		lineageTag: aa872fa2-5055-4351-b260-667fbe6d7fb3
+		sourceLineageTag: CustomerKey
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WWICustomerID
+		dataType: int64
+		formatString: 0
+		lineageTag: f45c9735-b14b-4682-855b-f8d256a1614f
+		sourceLineageTag: WWICustomerID
+		summarizeBy: none
+		sourceColumn: WWICustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer
+		dataType: string
+		lineageTag: f7a93e84-a160-4959-b210-2eacbd438530
+		sourceLineageTag: Customer
+		summarizeBy: none
+		sourceColumn: Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column BillToCustomer
+		dataType: string
+		lineageTag: a1ebbe46-4105-4c2f-8850-68e0e3f2070c
+		sourceLineageTag: BillToCustomer
+		summarizeBy: none
+		sourceColumn: BillToCustomer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: f1531890-f90e-47d4-9c9a-d8978c6fb4cf
+		sourceLineageTag: Category
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column BuyingGroup
+		dataType: string
+		lineageTag: 55a6f528-6dcb-41fb-a12a-b461b04afaca
+		sourceLineageTag: BuyingGroup
+		summarizeBy: none
+		sourceColumn: BuyingGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrimaryContact
+		dataType: string
+		lineageTag: 315d84bb-d9d0-46f5-a3b1-de7262c2cf3f
+		sourceLineageTag: PrimaryContact
+		summarizeBy: none
+		sourceColumn: PrimaryContact
+
+		annotation SummarizationSetBy = Automatic
+
+	column PostalCode
+		dataType: string
+		lineageTag: 99d51635-dac4-4187-a725-9e53b6c94e9d
+		sourceLineageTag: PostalCode
+		summarizeBy: none
+		sourceColumn: PostalCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValidFrom
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a3f51a5f-fd77-45c3-b457-b4dc637f37ba
+		sourceLineageTag: ValidFrom
+		summarizeBy: none
+		sourceColumn: ValidFrom
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValidTo
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4f12d728-0574-43e6-bad2-e48bfea9d0e1
+		sourceLineageTag: ValidTo
+		summarizeBy: none
+		sourceColumn: ValidTo
+
+		annotation SummarizationSetBy = Automatic
+
+	column LineageKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 9c647ccf-9524-4fe9-85ed-ff2377895b50
+		sourceLineageTag: LineageKey
+		summarizeBy: none
+		sourceColumn: LineageKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimension_customer = entity
+		mode: directLake
+		source
+			entityName: dimension_customer
+			schemaName: dbo
+			expressionSource: 'DirectLake - wwilakehouse'
+

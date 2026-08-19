@@ -1,0 +1,256 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "3364c77f78cf3a4064d6",
+  "displayName": "Page 1",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "autoPageGenerationConfig": {
+    "selectedFields": [
+      {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "dimension_date"
+            }
+          },
+          "Property": "CalendarMonthLabel"
+        }
+      },
+      {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "fact_sale"
+                }
+              },
+              "Property": "WWIInvoiceID"
+            }
+          },
+          "Function": 5
+        }
+      }
+    ],
+    "visualContainerConfigurations": [
+      {
+        "name": "f508bfd5fb76654a8bd8",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dimension_date"
+                }
+              },
+              "Property": "CalendarMonthLabel"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sale"
+                    }
+                  },
+                  "Property": "WWIInvoiceID"
+                }
+              },
+              "Function": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "caf446550e742439dd46",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dimension_date"
+                }
+              },
+              "Property": "FiscalMonthLabel"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sale"
+                    }
+                  },
+                  "Property": "WWIInvoiceID"
+                }
+              },
+              "Function": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "238bbd848fb411642629",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dimension_date"
+                }
+              },
+              "Property": "CalendarMonthLabel"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sale"
+                    }
+                  },
+                  "Property": "TaxRate"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "c324c8e0f7c6e8ab60b9",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dimension_date"
+                }
+              },
+              "Property": "CalendarMonthLabel"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sale"
+                    }
+                  },
+                  "Property": "TotalExcludingTax"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "620c53b175403c38fe90",
+        "fields": []
+      },
+      {
+        "name": "a7003cfe057d7dbac60f",
+        "fields": []
+      },
+      {
+        "name": "49e8433b74459a72943d",
+        "fields": []
+      },
+      {
+        "name": "5f9f7e2c79b77733d994",
+        "fields": []
+      },
+      {
+        "name": "4e31c11d38749b974ee3",
+        "fields": []
+      },
+      {
+        "name": "e426135b89babdb3abba",
+        "fields": []
+      },
+      {
+        "name": "83a0d882f64018e88403",
+        "fields": []
+      },
+      {
+        "name": "3a995e4fa15e9c151e57",
+        "fields": [
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sale"
+                    }
+                  },
+                  "Property": "WWIInvoiceID"
+                }
+              },
+              "Function": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "f6bba139252c0ef192f5",
+        "fields": [
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sale"
+                    }
+                  },
+                  "Property": "TaxRate"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "0189bfd8ee8d765b9bf0",
+        "fields": [
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sale"
+                    }
+                  },
+                  "Property": "TotalExcludingTax"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "af32b69bc8debf892228",
+        "fields": []
+      }
+    ],
+    "layout": {
+      "related": {
+        "version": 1
+      }
+    }
+  }
+}
