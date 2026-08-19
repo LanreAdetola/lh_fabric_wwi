@@ -1,0 +1,9 @@
+expression 'DirectLake - wwilakehouse' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/c6b7d70d-b362-4def-868f-9e7d1b098d5e/e77aad06-8094-47fb-82fd-887cdd864adc", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 4dcab37a-a480-462d-b04e-d3a8b390715c
+
+	annotation PBI_IncludeFutureArtifacts = False
+
