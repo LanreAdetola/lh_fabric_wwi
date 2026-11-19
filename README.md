@@ -7,16 +7,14 @@ Lake — **50.1 million sales rows**, no import, no refresh cycle.
 
 ![WWI Sales Report running over Direct Lake](docs/images/sales-report.jpg)
 
-Built from the Microsoft Learn tutorial
-[Lakehouse end-to-end scenario](https://learn.microsoft.com/fabric/data-engineering/tutorial-lakehouse-introduction).
-This repository *is* the Fabric workspace **Data Lakehouse Tutorial** — every
+This repository *is* the Fabric workspace **Data Lakehouse Project** — every
 folder is a Fabric item, kept in sync through workspace Git integration rather
 than committed by hand.
 
 ## Architecture
 
 ```
-Azure Blob Storage                 Fabric workspace: Data Lakehouse Tutorial
+Azure Blob Storage                 Fabric workspace: Data Lakehouse
 sampledata/
   WideWorldImportersDW/parquet
           │
